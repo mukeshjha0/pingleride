@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pingle Ride – Car Rental in Ranchi</title>
+<meta name="description" content="Pingle Ride offers flexible car rental in Ranchi: airport transfers, family outings, business trips and intercity taxis at transparent prices.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FAFAF7;--surface:#fff;--ink:#0D1117;--muted:#4A5568;--line:#E8E8E2;--brand:#F76E11;--brand-d:#C2540A;--tint:#FFF0E6;--dark:#0D1117;--dark2:#1A2332;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0D1117;--surface:#161D29;--ink:#F3F4F6;--muted:#A3ADBD;--line:#263042;--tint:#2A1A0F;--brand-d:#FF9A55}}
+:root[data-theme="dark"]{--bg:#0D1117;--surface:#161D29;--ink:#F3F4F6;--muted:#A3ADBD;--line:#263042;--tint:#2A1A0F;--brand-d:#FF9A55}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:calc(76px + env(safe-area-inset-top,0px))}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{font-family:'DM Sans',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+h1,h2,h3,.brand{font-family:'Syne',system-ui,sans-serif;line-height:1.15}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--brand);outline-offset:2px}
+.wrap{max-width:1160px;margin:0 auto;padding:0 5%}
+section{padding:80px 0}
+h2{font-size:clamp(1.7rem,3.4vw,2.6rem);font-weight:800;letter-spacing:-.5px;margin-bottom:.8rem}
+.lead{color:var(--muted);max-width:56ch}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.8rem 1.6rem;border-radius:8px;font:700 1rem 'Syne',sans-serif;text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:background .2s,border-color .2s}
+.btn-p{background:var(--brand);color:#111}.btn-p:hover{background:#ff8a3d}
+.btn-o{border-color:rgba(255,255,255,.35);color:#fff}.btn-o:hover{border-color:var(--brand);color:var(--brand)}
+
+/* header */
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:color-mix(in srgb,var(--surface) 94%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.bar{height:68px;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.brand{font-size:1.45rem;font-weight:800;text-decoration:none;letter-spacing:-.5px}.brand span{color:var(--brand)}
+nav ul{display:flex;gap:1.8rem;list-style:none}
+nav a{text-decoration:none;color:var(--muted);font-weight:500;font-size:.92rem}nav a:hover{color:var(--brand-d)}
+.hd-r{display:flex;align-items:center;gap:.6rem}
+.call{font-weight:700;text-decoration:none;font-size:.92rem;padding:.5rem 1rem;border-radius:8px;background:var(--brand);color:#111}
+.ico-btn{background:none;border:1px solid var(--line);color:var(--ink);border-radius:8px;width:40px;height:40px;cursor:pointer;font-size:1.1rem}
+#menu-btn{display:none}
+
+/* hero */
+.hero{min-height:100vh;display:flex;align-items:center;padding:110px 0 60px;background:linear-gradient(135deg,var(--dark),var(--dark2) 60%,var(--dark));color:#fff;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0 0 0 45%;background:radial-gradient(ellipse at 80% 50%,rgba(247,110,17,.2),transparent 70%);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:4rem;align-items:center;position:relative}
+.hero h1{font-size:clamp(2.4rem,5vw,3.9rem);font-weight:800;letter-spacing:-1px;margin-bottom:1.3rem}
+.hero p{color:rgba(255,255,255,.75);max-width:46ch;margin-bottom:2rem;font-size:1.05rem}
+.btns{display:flex;gap:1rem;flex-wrap:wrap}
+.live{display:inline-flex;align-items:center;gap:.5rem;margin-top:1.8rem;font-size:.85rem;color:#86efac}
+.live::before{content:"";width:8px;height:8px;border-radius:50%;background:#22C55E}
+.card{background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:14px}
+.book{padding:1.8rem;box-shadow:0 24px 80px rgba(0,0,0,.35)}
+.book h2{font-size:1.2rem;margin-bottom:1.2rem}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem}
+.fld{display:flex;flex-direction:column;gap:.35rem;margin-bottom:1rem}.row .fld{margin:0}
+label{font-size:.8rem;font-weight:700;color:var(--muted)}
+input,select{font:inherit;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:8px;padding:.65rem .8rem;width:100%}
+input:focus,select:focus{border-color:var(--brand);outline:none}
+.book .btn{width:100%;justify-content:center;margin-top:.3rem}
+.note{text-align:center;font-size:.8rem;color:var(--muted);margin-top:.8rem}
+
+/* stats */
+.stats{background:var(--brand);color:#111;padding:1.3rem 0}
+.stats ul{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);text-align:center;gap:1rem}
+.stats b{display:block;font:800 1.8rem 'Syne',sans-serif}.stats span{font-size:.85rem;font-weight:500}
+
+/* grids & cards */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2.5rem}
+.pad{padding:1.8rem}
+.pad h3{font-size:1.08rem;margin-bottom:.5rem}.pad p{color:var(--muted);font-size:.93rem}
+.num{width:44px;height:44px;border-radius:10px;background:var(--tint);color:var(--brand-d);font:800 1.2rem 'Syne',sans-serif;display:grid;place-items:center;margin-bottom:1rem}
+.services{background:var(--dark);color:#fff}
+.services .lead{color:rgba(255,255,255,.65)}
+.services .card{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.1);color:#fff}
+.services .pad p{color:rgba(255,255,255,.65)}
+.ico{width:48px;height:48px;border-radius:12px;background:var(--brand);display:grid;place-items:center;font-size:1.4rem;margin-bottom:1rem}
+
+/* fleet */
+.tabs{display:flex;gap:.6rem;flex-wrap:wrap;margin:1.8rem 0}
+.tab{padding:.5rem 1.1rem;border-radius:20px;border:1.5px solid var(--line);background:transparent;color:var(--muted);font:500 .9rem 'DM Sans',sans-serif;cursor:pointer}
+.tab[aria-pressed="true"]{background:var(--brand);border-color:var(--brand);color:#111;font-weight:700}
+.fleet{margin-top:0}
+.car{overflow:hidden}
+.car-img{height:130px;display:grid;place-items:center;font-size:3.6rem;background:var(--tint);border-bottom:3px solid var(--brand)}
+.car-b{padding:1.2rem}.car-b h3{font-size:1rem}
+.tags{display:flex;gap:.5rem 1rem;flex-wrap:wrap;margin:.5rem 0;font-size:.8rem;color:var(--muted)}
+.price{display:flex;align-items:baseline;gap:.3rem;border-top:1px solid var(--line);padding-top:.8rem;margin-top:.8rem}
+.price b{font:800 1.3rem 'Syne',sans-serif;color:var(--brand-d)}.price small{color:var(--muted)}
+.price a{margin-left:auto;padding:.4rem 1rem;border-radius:6px;background:var(--tint);color:var(--brand-d);font:700 .85rem 'Syne',sans-serif;text-decoration:none}
+.price a:hover{background:var(--brand);color:#111}
+
+/* why */
+.why{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.why ul{list-style:none;display:grid;gap:1.4rem;margin-top:2rem}
+.why li{display:flex;gap:1rem}.why li>span{flex:none;width:44px;height:44px;border-radius:10px;background:var(--tint);display:grid;place-items:center;font-size:1.2rem}
+.why h3{font-size:1rem;margin-bottom:.2rem}.why li p{color:var(--muted);font-size:.92rem}
+.rate{background:linear-gradient(135deg,var(--brand),#FFB347);color:#111;border-radius:20px;padding:2.5rem}
+.rate strong{display:block;font:800 4.5rem 'Syne',sans-serif;line-height:1}
+.rate ul{list-style:none;margin-top:1.5rem;display:grid;gap:.6rem;font-weight:500}
+.rate li::before{content:"✓ ";font-weight:800}
+
+/* reviews / faq */
+.reviews{background:var(--tint)}
+.stars{color:var(--brand);letter-spacing:2px;margin-bottom:.8rem}
+blockquote{color:var(--muted);font-size:.93rem;margin-bottom:1.2rem}
+.who{display:flex;align-items:center;gap:.8rem;font-size:.9rem}
+.who i{width:40px;height:40px;border-radius:50%;background:var(--brand);color:#111;font:700 .9rem 'Syne',sans-serif;display:grid;place-items:center;font-style:normal}
+.who small{display:block;color:var(--muted)}
+.faq{max-width:760px;margin:2.5rem auto 0}
+details{border-bottom:1px solid var(--line);padding:1.2rem 0}
+summary{font:700 .98rem 'Syne',sans-serif;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:1rem}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--brand-d);font-size:1.3rem}
+details[open] summary::after{content:"−"}
+details p{margin-top:.7rem;color:var(--muted);font-size:.93rem}
+
+/* cta + footer */
+.cta{background:linear-gradient(135deg,var(--dark),var(--dark2));color:#fff;text-align:center}
+.cta p{color:rgba(255,255,255,.7);margin:0 auto 2rem}.cta h2{max-width:20ch;margin:0 auto 1rem}.cta .btns{justify-content:center}
+footer{background:#080D13;color:rgba(255,255,255,.6);padding:60px 0 24px;font-size:.88rem}
+.fgrid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,.1)}
+footer .brand{color:#fff;margin-bottom:.8rem;display:inline-block}
+footer h3{color:#fff;font-size:.95rem;margin-bottom:.9rem}
+footer ul{list-style:none;display:grid;gap:.5rem}
+footer a{text-decoration:none}footer a:hover{color:var(--brand)}
+.fbot{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding-top:1.5rem;font-size:.82rem}
+.fab{position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:60;width:56px;height:56px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 4px 20px rgba(37,211,102,.45)}
+.fab svg{width:28px;height:28px;fill:#fff}
+
+@media(max-width:900px){
+ #menu-btn{display:block}.call{display:none}
+ nav{position:absolute;top:100%;left:0;right:0;background:var(--surface);border-bottom:1px solid var(--line);display:none}
+ nav.open{display:block}nav ul{flex-direction:column;gap:0;padding:.5rem 5%}nav a{display:block;padding:.8rem 0}
+ .hero-grid,.why,.grid3{grid-template-columns:1fr}
+ .stats ul{grid-template-columns:repeat(2,1fr)}.fgrid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){section{padding:60px 0}.row{grid-template-columns:1fr}.fgrid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap bar">
+  <a href="#top" class="brand">Pingle<span>Ride</span></a>
+  <nav id="nav" aria-label="Main">
+   <ul><li><a href="#services">Services</a></li><li><a href="#fleet">Fleet</a></li><li><a href="#why">Why us</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#faq">FAQ</a></li></ul>
+  </nav>
+  <div class="hd-r">
+   <a class="call" href="tel:+918521667890">Call 085216 67890</a>
+   <button class="ico-btn" id="theme" aria-label="Toggle dark mode">◐</button>
+   <button class="ico-btn" id="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav">☰</button>
+  </div>
+ </div>
+</header>
+
+<main id="top">
+<section class="hero">
+ <div class="wrap hero-grid">
+  <div>
+   <h1>Your ride, your way, across Ranchi</h1>
+   <p>Well-maintained cars, transparent pricing and no hassle, whether it's an airport run, a family trip or an intercity journey.</p>
+   <div class="btns"><a class="btn btn-p" href="tel:+918521667890">Book now</a><a class="btn btn-o" href="#fleet">View fleet</a></div>
+   <div class="live">Available 24/7 in Ranchi, Jharkhand</div>
+  </div>
+  <form class="card book" id="book">
+   <h2>Quick booking</h2>
+   <div class="row">
+    <div class="fld"><label for="from">Pick-up location</label><input id="from" required placeholder="Ranchi, Jharkhand"></div>
+    <div class="fld"><label for="to">Drop location</label><input id="to" placeholder="Destination"></div>
+   </div>
+   <div class="row">
+    <div class="fld"><label for="date">Pick-up date</label><input id="date" type="date" required></div>
+    <div class="fld"><label for="trip">Trip type</label><select id="trip"><option>One way</option><option>Round trip</option><option>Local (hourly)</option><option>Airport transfer</option></select></div>
+   </div>
+   <div class="fld"><label for="car">Car type</label><select id="car"><option>Any</option><option>Hatchback</option><option>Sedan</option><option>SUV</option><option>Tempo Traveller</option></select></div>
+   <button class="btn btn-p" type="submit">Request booking on WhatsApp</button>
+   <p class="note">Or call <a href="tel:+918521667890">085216 67890</a></p>
+  </form>
+ </div>
+</section>
+
+<div class="stats"><div class="wrap"><ul>
+ <li><b>500+</b><span>Happy customers</span></li><li><b>20+</b><span>Cars available</span></li><li><b>50+</b><span>Cities covered</span></li><li><b>24/7</b><span>Customer support</span></li>
+</ul></div></div>
+
+<section>
+ <div class="wrap">
+  <h2>Book in three steps</h2>
+  <p class="lead">From choosing your ride to hitting the road, the process stays simple.</p>
+  <div class="grid3">
+   <div class="card pad"><div class="num">1</div><h3>Choose your date and route</h3><p>Tell us where you're going and when: local Ranchi rides, airport transfers or long-distance trips.</p></div>
+   <div class="card pad"><div class="num">2</div><h3>Select your vehicle</h3><p>Pick a hatchback, sedan, SUV or tempo traveller that fits your group and budget.</p></div>
+   <div class="card pad"><div class="num">3</div><h3>Confirm and ride</h3><p>Call or WhatsApp to confirm. Your driver arrives on time and you pay the quoted fare.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="services" id="services">
+ <div class="wrap">
+  <h2>Travel solutions for every need</h2>
+  <p class="lead">From a quick airport pickup to a multi-day family trip across Jharkhand.</p>
+  <div class="grid3">
+   <div class="card pad"><div class="ico">✈️</div><h3>Airport transfers</h3><p>Punctual pickups and drop-offs at Birsa Munda Airport, Ranchi.</p></div>
+   <div class="card pad"><div class="ico">🏙️</div><h3>Local city rides</h3><p>Half-day and full-day rentals within Ranchi at a flat hourly rate.</p></div>
+   <div class="card pad"><div class="ico">🛣️</div><h3>Intercity travel</h3><p>Rides to Jamshedpur, Dhanbad, Hazaribagh, Patna and beyond, one way or round trip.</p></div>
+   <div class="card pad"><div class="ico">👨‍👩‍👧</div><h3>Family outings</h3><p>Weekend getaways and pilgrimages in an SUV or tempo traveller.</p></div>
+   <div class="card pad"><div class="ico">💼</div><h3>Business travel</h3><p>Clean AC sedans and punctual drivers for corporate clients.</p></div>
+   <div class="card pad"><div class="ico">📦</div><h3>Custom packages</h3><p>Weddings, events and multi-day tours at tailored rates.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="fleet">
+ <div class="wrap">
+  <h2>Cars for every journey</h2>
+  <p class="lead">Every vehicle is regularly serviced, sanitised and insured.</p>
+  <div class="tabs" role="group" aria-label="Filter fleet by category"></div>
+  <div class="grid3 fleet" aria-live="polite"></div>
+ </div>
+</section>
+
+<section id="why" style="padding-top:0">
+ <div class="wrap why">
+  <div>
+   <h2>Trusted by Ranchi travellers</h2>
+   <p class="lead">Travel should be simple, safe and affordable every time.</p>
+   <ul>
+    <li><span>💰</span><div><h3>Transparent pricing</h3><p>See the full fare before you confirm. No surge pricing or hidden fees.</p></div></li>
+    <li><span>🛡️</span><div><h3>Verified and insured cars</h3><p>Commercially insured, PUC-certified and regularly serviced.</p></div></li>
+    <li><span>⏱️</span><div><h3>On time, every time</h3><p>Drivers are trained for punctuality, so you don't miss flights or meetings.</p></div></li>
+    <li><span>📞</span><div><h3>24/7 local support</h3><p>Call or WhatsApp any time; our Ranchi team responds fast.</p></div></li>
+   </ul>
+  </div>
+  <div class="rate">
+   <strong>4.8★</strong><p>Average rating from customers in Ranchi</p>
+   <ul><li>Free cancellation up to 1 hour before pickup</li><li>No hidden charges</li><li>Courteous, well-trained drivers</li><li>AC cars, cleaned before every trip</li><li>Covers all of Jharkhand and beyond</li></ul>
+  </div>
+ </div>
+</section>
+
+<section class="reviews" id="reviews">
+ <div class="wrap">
+  <h2>What Ranchi says about us</h2>
+  <div class="grid3">
+   <figure class="card pad"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>Booked an Innova and two Swifts for my daughter's wedding. All cars arrived on time and clean, and the drivers were very professional.</blockquote><figcaption class="who"><i>RK</i><span>Ramesh Kumar<small>Ranchi, Jharkhand</small></span></figcaption></figure>
+   <figure class="card pad"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>I travel to Jamshedpur every month for work and Pingle Ride is my go-to. Punctual, AC works perfectly, and the price is fair.</blockquote><figcaption class="who"><i>PS</i><span>Priya Singh<small>Doranda, Ranchi</small></span></figcaption></figure>
+   <figure class="card pad"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>Airport pickup at 4 AM and they were there 10 minutes early. Polite driver, spotless car. I'll use them again.</blockquote><figcaption class="who"><i>AM</i><span>Amit Mahato<small>Kanke, Ranchi</small></span></figcaption></figure>
+  </div>
+ </div>
+</section>
+
+<section id="faq">
+ <div class="wrap">
+  <h2 style="text-align:center">Common questions</h2>
+  <div class="faq">
+   <details><summary>How do I book a car?</summary><p>Call or WhatsApp <strong>085216 67890</strong>, or use the booking form on this page. We confirm within minutes.</p></details>
+   <details><summary>Is there a minimum booking duration?</summary><p>Local city rides start at 4 hours. Outstation trips have no minimum, and one-way rides are available.</p></details>
+   <details><summary>Do prices include fuel?</summary><p>Yes. Fares include fuel, driver charges and tolls, so the quoted rate is what you pay.</p></details>
+   <details><summary>Can I cancel my booking?</summary><p>Yes, free of charge up to 1 hour before pickup. Just call us.</p></details>
+   <details><summary>Do you offer corporate or bulk discounts?</summary><p>Yes, we have packages for corporate clients, weddings and group travel. Contact us for a custom plan.</p></details>
+   <details><summary>Which cities can you travel to from Ranchi?</summary><p>Jamshedpur, Dhanbad, Hazaribagh, Bokaro, Patna, Kolkata and more. Call for a quote.</p></details>
+  </div>
+ </div>
+</section>
+
+<section class="cta">
+ <div class="wrap">
+  <h2>Book your Pingle Ride today</h2>
+  <p>Call, WhatsApp or use the form above. We're available 24/7.</p>
+  <div class="btns"><a class="btn btn-p" href="tel:+918521667890">📞 Call 085216 67890</a><a class="btn btn-o" href="https://wa.me/918521667890?text=Hi%20Pingle%20Ride%2C%20I%20want%20to%20book%20a%20car" target="_blank" rel="noopener">💬 WhatsApp us</a></div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <div class="fgrid">
+   <div><a class="brand" href="#top">Pingle<span style="color:var(--brand)">Ride</span></a>
+    <p style="margin-bottom:1rem">Easy, flexible car rental for every kind of trip in Ranchi, at transparent prices.</p>
+    <p>📍 Ranchi, Jharkhand<br>📞 <a href="tel:+918521667890">085216 67890</a><br>🌐 <a href="https://pingles.in">pingles.in</a></p></div>
+   <div><h3>Services</h3><ul><li><a href="#services">Airport transfers</a></li><li><a href="#services">Local city rides</a></li><li><a href="#services">Intercity travel</a></li><li><a href="#services">Family outings</a></li></ul></div>
+   <div><h3>Quick links</h3><ul><li><a href="#book">Book a car</a></li><li><a href="#fleet">Our fleet</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#faq">FAQ</a></li></ul></div>
+   <div><h3>Popular routes</h3><ul><li>Ranchi to Jamshedpur</li><li>Ranchi to Dhanbad</li><li>Ranchi to Hazaribagh</li><li>Ranchi to Patna</li><li>Ranchi to Kolkata</li></ul></div>
+  </div>
+  <div class="fbot"><span>© 2026 Pingle Ride. All rights reserved.</span><span>Made in Ranchi, Jharkhand</span></div>
+ </div>
+</footer>
+
+<a class="fab" href="https://wa.me/918521667890?text=Hi%20Pingle%20Ride%2C%20I%20want%20to%20book%20a%20car" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1l-.9 1.2c-.2.2-.3.2-.6.1-1.6-.8-2.6-1.4-3.7-3.2-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5l-.9-2.1c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 1.9.8 2.6.9 3.5.7.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 22a9.9 9.9 0 01-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.9 9.9 0 1112 22zm0-22A12 12 0 002 18l-2 6 6.3-1.7A12 12 0 1012 0z"/></svg></a>
+
+<script>
+const PH='918521667890';
+const cars=[
+['🚗','Maruti Swift / WagonR','Hatchback','4 seats','Petrol/CNG',9],
+['🚙','Honda City / Maruti Dzire','Sedan','4 seats','Petrol/Diesel',11],
+['🚐','Innova Crysta / Ertiga','SUV','6–7 seats','Diesel',14],
+['🛻','Tata Nexon / Hyundai Creta','SUV','5 seats','Petrol/Diesel',13],
+['🚌','Tempo Traveller (12–17 seat)','Tempo Traveller','12–17 seats','Diesel',18],
+['✨','Toyota Fortuner / XUV700','SUV','6–7 seats','Diesel',20]];
+const cats=['All',...new Set(cars.map(c=>c[2]))];
+const tabs=document.querySelector('.tabs'),grid=document.querySelector('.fleet');
+const wa=t=>`https://wa.me/${PH}?text=${encodeURIComponent(t)}`;
+function draw(cat){
+ tabs.innerHTML=cats.map(c=>`<button class="tab" aria-pressed="${c===cat}" data-c="${c}">${c}</button>`).join('');
+ grid.innerHTML=cars.filter(c=>cat==='All'||c[2]===cat).map(c=>`<article class="card car"><div class="car-img" aria-hidden="true">${c[0]}</div><div class="car-b"><h3>${c[1]}</h3><div class="tags"><span>👥 ${c[3]}</span><span>❄️ AC</span><span>⛽ ${c[4]}</span></div><div class="price"><b>₹${c[5]}</b><small>/km onwards</small><a href="${wa('Hi Pingle Ride, I want to book: '+c[1])}" target="_blank" rel="noopener">Book</a></div></div></article>`).join('');
+}
+tabs.addEventListener('click',e=>{const b=e.target.closest('.tab');if(b)draw(b.dataset.c)});
+draw('All');
+
+document.getElementById('date').min=new Date().toISOString().split('T')[0];
+document.getElementById('book').addEventListener('submit',e=>{
+ e.preventDefault();
+ const v=id=>document.getElementById(id).value||'-';
+ window.open(wa(`Hi Pingle Ride, I'd like to book.\nPick-up: ${v('from')}\nDrop: ${v('to')}\nDate: ${v('date')}\nTrip: ${v('trip')}\nCar: ${v('car')}`),'_blank','noopener');
+});
+
+const nav=document.getElementById('nav'),mb=document.getElementById('menu-btn');
+mb.addEventListener('click',()=>{const o=nav.classList.toggle('open');mb.setAttribute('aria-expanded',o)});
+nav.addEventListener('click',e=>{if(e.target.tagName==='A'){nav.classList.remove('open');mb.setAttribute('aria-expanded',false)}});
+document.getElementById('theme').addEventListener('click',()=>{
+ const r=document.documentElement,dark=r.dataset.theme?r.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches;
+ r.dataset.theme=dark?'light':'dark';
+});
+</script>
+</body>
+</html>
